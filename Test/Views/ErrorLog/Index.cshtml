@@ -1,0 +1,25 @@
+﻿@model List<Site.Models.Log4net>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<table>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+               @item.Level 
+            </td>
+            <td>
+                @item.Logger
+            </td>
+            <td>
+                @item.Host
+            </td>
+            <td>
+                @item.Date
+            </td>
+        </tr>
+    }
+</table>

@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{660DCA92-266F-44C2-A789-2F5377A6CE59}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Site.Models</RootNamespace>
+    <AssemblyName>Site.Models</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ad.cs" />
+    <Compile Include="ApplyAuditSupplier.cs" />
+    <Compile Include="AuditLog.cs" />
+    <Compile Include="BackVisitRecord.cs" />
+    <Compile Include="Customer.cs" />
+    <Compile Include="CustomerVisitRecord.cs" />
+    <Compile Include="DateNorm.cs" />
+    <Compile Include="Employee.cs" />
+    <Compile Include="Factory.cs" />
+    <Compile Include="FactoryBank.cs" />
+    <Compile Include="FactoryBrand.cs" />
+    <Compile Include="FactoryCustomerVisitRecord.cs" />
+    <Compile Include="FactoryLevelRatio.cs" />
+    <Compile Include="FactoryPic.cs" />
+    <Compile Include="FactoryRelation.cs" />
+    <Compile Include="FinanceRecord.cs" />
+    <Compile Include="FinanceRecordPrivate.cs" />
+    <Compile Include="Furniture.cs" />
+    <Compile Include="FurnitureKinds.cs" />
+    <Compile Include="FurniturePic.cs" />
+    <Compile Include="FurnitureSizePrice.cs" />
+    <Compile Include="Gen\Ad.Db.cs" />
+    <Compile Include="Gen\ApplyAuditSupplier.Db.cs" />
+    <Compile Include="Gen\AuditLog.Db.cs" />
+    <Compile Include="Gen\BackVisitRecord.Db.cs" />
+    <Compile Include="Gen\Customer.Db.cs" />
+    <Compile Include="Gen\CustomerVisitRecord.Db.cs" />
+    <Compile Include="Gen\DateNorm.Db.cs" />
+    <Compile Include="Gen\Employee.Db.cs" />
+    <Compile Include="Gen\Factory.Db.cs" />
+    <Compile Include="Gen\FactoryBank.Db.cs" />
+    <Compile Include="Gen\FactoryBrand.Db.cs" />
+    <Compile Include="Gen\FactoryCustomerVisitRecord.Db.cs" />
+    <Compile Include="Gen\FactoryLevelRatio.Db.cs" />
+    <Compile Include="Gen\FactoryPic.Db.cs" />
+    <Compile Include="Gen\FactoryRelation.Db.cs" />
+    <Compile Include="Gen\FinanceRecord.Db.cs" />
+    <Compile Include="Gen\FinanceRecordPrivate.Db.cs" />
+    <Compile Include="Gen\Furniture.Db.cs" />
+    <Compile Include="Gen\FurnitureKinds.Db.cs" />
+    <Compile Include="Gen\FurniturePic.Db.cs" />
+    <Compile Include="Gen\FurnitureSizePrice.Db.cs" />
+    <Compile Include="Gen\Kinds.Db.cs" />
+    <Compile Include="Gen\Log4net.Db.cs" />
+    <Compile Include="Gen\LoginInfo.Db.cs" />
+    <Compile Include="Gen\Logistics.Db.cs" />
+    <Compile Include="Gen\LogisticsLine.Db.cs" />
+    <Compile Include="Gen\Notify.Db.cs" />
+    <Compile Include="Gen\Office.Db.cs" />
+    <Compile Include="Gen\Order.Db.cs" />
+    <Compile Include="Gen\OrderItems.Db.cs" />
+    <Compile Include="Gen\OrderLog.Db.cs" />
+    <Compile Include="Gen\RecommendSupplier.Db.cs" />
+    <Compile Include="Gen\Role.Db.cs" />
+    <Compile Include="Gen\SysDic.Db.cs" />
+    <Compile Include="Gen\Temp6402.Db.cs" />
+    <Compile Include="Gen\ThirdLinks.Db.cs" />
+    <Compile Include="Gen\TrackRecord.Db.cs" />
+    <Compile Include="Gen\User.Db.cs" />
+    <Compile Include="Gen\UserDetail.Db.cs" />
+    <Compile Include="Gen\UserRole.Db.cs" />
+    <Compile Include="Gen\VerifyCode.Db.cs" />
+    <Compile Include="Gen\VersionRecord.Db.cs" />
+    <Compile Include="Gen\WorkAttendance.Db.cs" />
+    <Compile Include="Gen\WorkBusiness.Db.cs" />
+    <Compile Include="Gen\WorkEvent.Db.cs" />
+    <Compile Include="Gen\WorkPlanSummary.Db.cs" />
+    <Compile Include="Kinds.cs" />
+    <Compile Include="Log4net.cs" />
+    <Compile Include="LoginInfo.cs" />
+    <Compile Include="Logistics.cs" />
+    <Compile Include="LogisticsLine.cs" />
+    <Compile Include="Notify.cs" />
+    <Compile Include="Office.cs" />
+    <Compile Include="Order.cs" />
+    <Compile Include="OrderItems.cs" />
+    <Compile Include="OrderLog.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecommendSupplier.cs" />
+    <Compile Include="Role.cs" />
+    <Compile Include="SysDic.cs" />
+    <Compile Include="Temp6402.cs" />
+    <Compile Include="ThirdLinks.cs" />
+    <Compile Include="TrackRecord.cs" />
+    <Compile Include="User.cs" />
+    <Compile Include="UserDetail.cs" />
+    <Compile Include="UserRole.cs" />
+    <Compile Include="VerifyCode.cs" />
+    <Compile Include="VersionRecord.cs" />
+    <Compile Include="WorkAttendance.cs" />
+    <Compile Include="WorkBusiness.cs" />
+    <Compile Include="WorkEvent.cs" />
+    <Compile Include="WorkPlanSummary.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
